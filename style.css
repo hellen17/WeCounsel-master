@@ -1,0 +1,102 @@
+html,body{
+	height: 100%;
+	width: 100%;
+}
+.navbar{
+	background-color:#000500; 
+	padding: 1% 0;
+	font-size: 1.2em;
+}
+.navbar-brand{
+	min-height: 55px;
+	padding: 0 15px 5px;
+}
+#logo {
+	height: 90px;
+	padding: -350px 0px;
+	position: relative;
+}
+.navbar-default .navbar-nav li a{
+	color: #d5d5d5;	
+}
+.navbar-default .navbar-nav li a:hover,.navbar-default .navbar-nav li a.active {
+	color: #fff;	
+}
+#home{
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)),url(Therapistbg.jpg);
+	display: table;
+	height: 100%;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: cover;
+	
+
+}
+.landing-text{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.landing-text h1{
+	font-size: 500%;
+	font-weight: 700;
+	color: white;
+}
+.landing-text h3{
+	color: pink;
+	font-weight: 700;
+}
+.padding{
+	padding: 80px 0;
+}
+h3{
+	font-weight: 650;
+}
+.padding img{
+	width:100%;
+}
+#fixed{
+	background:url(Therapistbg.jpg) no-repeat center center fixed;
+	display: table;
+	height: 60%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(255,0,0,1)),url(Therapistbg.jpg);
+    background-position: center;
+background-repeat: no-repeat;
+
+}
+footer{
+	width: 100%;
+	background-color: #23415C;
+	padding:5% 5% 10% 5%;
+	color: #fff;
+}
+.fa{
+	padding: 15px;
+	font-size: 25px;
+	color: #fff;
+}
+.fa:hover{
+	color: #d5d5d5;
+	text-decoration: none;
+}
+.icon{
+	max-width: 700px;
+}
+@media(max-width: 768px){
+	.landing-text h1{
+		font-size: 300%;
+	}
+	.fa{
+		font-size: 20px;
+		padding: 10px;
+	}
+	.icon{
+		padding-top: 5%;
+		max-width: 100px;
+	}
+}

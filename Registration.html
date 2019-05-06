@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="Registration.css">
+	<!-- <link rel="stylesheet" type="text/css" href="bootstrap-3.3.6-dist/css/bootstrap.css"> -->
+
+	<script type="text/javascript">
+	 
+
+    function validate(form){
+    var x=document.myform.email.value;  
+    var password=document.myform.password.value;  
+    var atposition=x.indexOf("@");  
+    var dotposition=x.lastIndexOf(".");  
+    if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+    }
+    else if(password.length<6){
+alert("Password must be at least 6 characters long.");  
+  return false;
+    }
+    
+    }
+
+
+
+	</script>
+	<style>
+		.form .login-form{
+	display: none;
+}
+	</style>
+</head>
+<body>
+<div class="login">
+<div class="form">
+	<img src="avatar.png" class="avatar">
+<form name="myform" action="Registration.php" method="post" onsubmit="return validate(this);" class="registration">
+	<input type="text" name="user" placeholder="Username" required/>
+	<input type="password" name="password" placeholder="Create a Password" required/>
+	<input type="text" name="email" placeholder="you@example.com" required/>
+	<div style="width: 100%">
+		<input type="radio" name="gender" id="gender" value="Male" checked><span class="formText">Male</span>
+		<input type="radio" name="gender" id="gender" value="Female"><span class="formText">Female</span><br><br>
+	</div>
+	
+	<input type="submit" value="CREATE" class ="button"/>
+	<p class="info">Already have an account?<a href="#">Login</a></p>
+	<!-- <p class="info">Want to register as a certified therapist?<a href="admin.html">Click here</a></p> -->
+</form>	
+<form action="login_.php" method="post" class="login-form">
+	<input type="text" name="user" placeholder="Username" required />
+	<input type="password" name="password" placeholder="Password" required />
+	<input type="submit" value="LOGIN" class ="button"/>
+	<p class="info">Not Registered?<a href="#">Sign Up</a></p>
+
+</form>
+</div>
+</div>
+<script src="jquery-3.3.1.js"></script>
+<script>
+	$('.info a').click(function(){
+		$('form').animate({height: "toggle", opacity:"toggle"}, "slow");
+	});
+</script>
+</body>
+</html>
