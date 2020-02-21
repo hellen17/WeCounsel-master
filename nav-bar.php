@@ -20,7 +20,7 @@
 		</div>
 		<div class="collapse navbar-collapse" id="navbar-collapse-main">
 			<ul class="nav navbar-nav navbar-right ">
-				<li><a href="Home.html">Home</a></li>
+				<li><a href="index.html">Home</a></li>
         <li><a href="Group.html">Join Our Community</a></li>
         <li><a href="Services.php" class="active">Connect</a></li>
         <?php toggleNav();?>
